@@ -9,7 +9,8 @@ env/
 
 # === Node.js / React ===
 node_modules/
-dist/
+#dist/    temporal para desarrollo
+dist-ssr/
 build/
 .env.local
 .env.development.local
@@ -18,6 +19,7 @@ build/
 
 # === General ===
 .vscode/
+.idea/
 .DS_Store
 *.log
 npm-debug.log*
