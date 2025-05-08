@@ -2,13 +2,17 @@
 # Exit on error
 set -o errexit
 
+# 1. Build el frontend con Vite
+cd frontend
+npm install
+npm run build
+cd ..
+
+# 2. Instalar dependencias Python
 cd backend
-# Modify this line as needed for your package manager (pip, poetry, etc.)
 pip install -r ../requirements.txt
 
-# Convert static asset files
+# 3. Recolectar archivos estáticos y migraciones
 python manage.py collectstatic --no-input
-
-# Apply any outstanding database migrations
 python manage.py migrate
 
