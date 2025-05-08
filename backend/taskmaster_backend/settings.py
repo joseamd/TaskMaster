@@ -117,14 +117,14 @@ USE_I18N = True
 USE_TZ = True
 
 # Archivos estáticos
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 if IS_PRODUCTION:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 else:
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'frontend', 'dist', 'assets'),
+        os.path.join(BASE_DIR, '..', 'frontend', 'dist', 'assets'),
     ]
 
 # Tipo de campo de clave primaria por defecto
