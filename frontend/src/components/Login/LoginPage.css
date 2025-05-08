@@ -1,0 +1,64 @@
+/* Estilos generales para el contenedor principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 1px;
+  align-items: center;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(circle at 50% 14em, rgb(49 50 100) 0%, rgb(0, 2, 59) 60%, rgb(0, 2, 59) 100%);
+  padding: 2em;
+}
+
+/* Estilo para la cabecera con el título */
+.login-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+/* Estilos para el Paper (el cuadro del formulario de login) */
+.paper {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1rem;
+  padding: 4em;
+  width: 100%;
+}
+
+/* Estilo para el contenedor del Avatar */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+/* Estilo para el Avatar */
+.avatar {
+  background-color: gray; /* Color de fondo del avatar */
+}
+
+/* Estilo para el título */
+.title {
+  text-align: center;
+  color: inherit;
+}
+
+/* Estilo para el formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Estilo para el botón */
+.button {
+  width: 100%;
+}
