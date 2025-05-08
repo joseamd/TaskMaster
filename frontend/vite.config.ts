@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../backend/frontend/dist',  // Ubicación donde se generarán los archivos
+    outDir: '../frontend/dist',  // Ubicación donde se generarán los archivos
   },
 })
