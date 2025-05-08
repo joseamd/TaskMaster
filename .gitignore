@@ -9,7 +9,6 @@ env/
 
 # === Node.js / React ===
 node_modules/
-#dist/    temporal para desarrollo
 dist-ssr/
 build/
 .env.local
